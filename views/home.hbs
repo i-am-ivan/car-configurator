@@ -1,93 +1,115 @@
-<div class="container">
-    <hr>
-    <div class="row">
-        <div class="col-3">
-            <h5>Exterior</h5>
-        </div>
-        <div class="col-3">
-            <h5>Wheels</h5>
-        </div>
-        <div class="col-3">
-            <h5>Interior</h5>
-        </div>
-        <div class="col-3">
-            <h5>Series</h5>
-        </div>
-    </div>
-
-    <div>
-        <form class="row gx-3 gy-2 align-items-center">
-            <div class="col-sm-3">
-                <label class="visually-hidden" for="specificSizeSelect">Preference</label>
-                <select class="form-select" id="specificSizeSelect">
-                    <option selected>Choose...</option>
-                    <option value="Exterior Color">Exterior Color</option>
-                    <option value="Stripes">Stripes</option>
-                    <option value="Front, Rear, Side Lowers">Front, Rear, Side Lowers Finish</option>
-                </select>
-            </div>
-            <div class="col-sm-3">
-                <label class="visually-hidden" for="specificSizeSelect">Preference</label>
-                <select class="form-select" id="specificSizeSelect">
-                    <option selected>Choose...</option>
-                    <option value="Brake Calipers">Brake Calipers</option>
-                    <option value="20 Carbon-Fiber">20" Carbon-Fiber</option>
-                    <option value="20 One-Piece Forged Aluminium">20" One-Piece Forged Aluminium</option>
-                </select>
-            </div>
-            <div class="col-sm-3">
-                <label class="visually-hidden" for="specificSizeSelect">Preference</label>
-                <select class="form-select" id="specificSizeSelect">
-                    <option selected>Choose...</option>
-                    <option value="Dark Energy">Dark Energy</option>
-                    <option value="Launch Control">Launch Control</option>
-                    <option value="Light Speed">Light Speed</option>
-                </select>
-            </div>
-            <div class="col-sm-2">
-                <label class="visually-hidden" for="specificSizeSelect">Preference</label>
-                <select class="form-select" id="specificSizeSelect">
-                    <option selected>Choose...</option>
-                    <option value="Ford GT Competition">Ford GT Competition</option>
-                    <option value="Ford GT '67 Heritage">Ford GT '67 Heritage</option>
-                    <option value="Ford GT '66 Heritage">Ford GT '66 Heritage</option>
-                </select>
-            </div>
-            <div class="col-auto">
-                <button type="submit" class="btn btn-success">Submit</button>
-            </div>
-        </form>
-    </div>
-
-    <hr>
+<div class="container pt-3 pd-3">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">Home</li>
+        </ol>
+    </nav>
 
     <div class="container pt-4 pb-4">
-        <h5> Previous Configurators </h5>
+        <h3> Configurator </h3>
+        <p>What does your ideal version look like?  The Configurator lets you explore all the exciting variations.</p>
     </div>
 
-    <table class="table">
-        <thead>
-            <tr>
-            <th scope="col">#</th>
-            <th scope="col">Exterior</th>
-            <th scope="col">Wheels</th>
-            <th scope="col">Interior</th>
-            <th scope="col">Series</th>
-            <th scope="col">Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Exterior Color</td>
-                <td>20 Carbon-Fiber</td>
-                <td>Dark Energy</td>
-                <td>Ford GT Competition</td>
-                <td>
-                    <button type="button" class="btn btn-primary"><i class="bi bi-pencil-square"></i></button>
-                    <button type="button" class="btn btn-danger"><i class="bi bi-trash3"></i></button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="container">
+        <div class="row">
+            <section>
+            <div class="wizard">
+                <div class="wizard-inner">
+                    <div class="connecting-line"></div>
+                    <ul class="nav nav-tabs" role="tablist">
+
+                        <li role="presentation" class="active">
+                            <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                                <span class="round-tab">
+                                    <i class="glyphicon glyphicon-picture"></i>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li role="presentation" class="disabled">
+                            <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                                <span class="round-tab">
+                                    <i class="glyphicon glyphicon-record"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li role="presentation" class="disabled">
+                            <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                                <span class="round-tab">
+                                    <i class="glyphicon glyphicon-dashboard"></i>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li role="presentation" class="disabled">
+                            <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+                                <span class="round-tab">
+                                    <i class="glyphicon glyphicon-wrench"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <form role="form">
+                    <div class="tab-content">
+                        <div class="tab-pane active" role="tabpanel" id="step1">
+                            <h3>Eteriors</h3>
+                            
+                            <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
+                                <ul class="nav nav-pills flex-column mb-auto">
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link" aria-current="page">
+                                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                                        Exterior Color
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link link-dark">
+                                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                                        Stripes
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-link link-dark">
+                                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+                                        Front, Rear, and Side
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <ul class="list-inline pull-right">
+                                <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                            </ul>
+
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="step2">
+                            <h3>Wheels</h3>
+                            <p>This is step 2</p>
+                            <ul class="list-inline pull-right">
+                                <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                                <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="step3">
+                            <h3>Interiors</h3>
+                            <p>This is step 3</p>
+                            <ul class="list-inline pull-right">
+                                <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
+                                <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
+                            </ul>
+                        </div>
+                        <div class="tab-pane" role="tabpanel" id="complete">
+                            <h3>Series</h3>
+                            <p>You have successfully completed all steps.</p>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+    </div>
+
 </div>
