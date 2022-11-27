@@ -7,6 +7,7 @@ Prerequisites
 3. open terminal in project file and run:
     1. npm install express dotenv express-handlebars body-parser mysql
     2. npm install --save-dev nodemon
+    3. npm install mssql
 
 4. To run webapp in terminal run: nodemon app.js
 5. Navigate to browser at localhost:3000
