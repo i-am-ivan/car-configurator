@@ -50,7 +50,7 @@ GO
 DROP TABLE IF EXISTS cconfigurator.Configurators;
 -- Configurators Table
 CREATE TABLE Configurators(
-	ConfiguratorID INT PRIMARY KEY IDENTITY (4001, 1),
+	ConfiguratorID INT PRIMARY KEY IDENTITY (5001, 1),
 	ExteriorID INT,
 	WheelID INT,
 	InteriorID INT,
