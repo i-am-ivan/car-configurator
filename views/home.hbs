@@ -10,6 +10,7 @@
         <p>What does your ideal version look like?  The Configurator lets you explore all the exciting variations.</p>
     </div>
 
+    <form name="" action="" id="">
     <div class="container">
         <div class="row">
             <section>
@@ -51,65 +52,172 @@
                     </ul>
                 </div>
 
-                <form role="form">
+
                     <div class="tab-content">
                         <div class="tab-pane active" role="tabpanel" id="step1">
                             <h3>Eteriors</h3>
-                            
-                            <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
-                                <ul class="nav nav-pills flex-column mb-auto">
-                                    <li class="nav-item">
-                                        <a href="#" class="nav-link" aria-current="page">
-                                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
-                                        Exterior Color
-                                        </a>
-                                    </li>
+                            <hr>
+                            <div class="col-md-3">
+
+                                <div class="form-group mb-3">
+                                    <label class="mr-sm-2" for="inlineFormCustomSelect">Exterior Color</label><br>
+                                    <select class="custom-select mr-sm-2 form-control" id="inlineFormCustomSelect">
+                                        <option selected>Exterior Color</option>
+                                        <option value="Frozen white">Frozen white</option>
+                                        <option value="Ingot Silver">Ingot Silver</option>
+                                        <option value="Liquid Blue">Liquid Blue</option>
+                                        <option value="Liquid Grey">Liquid Grey</option>
+                                        <option value="Liquid Red">Liquid Red</option>
+                                        <option value="Matte Black">Matte Black</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="mr-sm-2" for="inlineFormCustomSelect">Exterior Stripes</label><br>
+                                    <select class="form-control" id="inlineFormCustomSelectPref">
+                                        <option selected>Exterior Stripes</option>
+                                        <option value="No Stripe">No Stripe</option>
+                                        <option value="Alloy">Alloy</option>
+                                        <option value="Competition Orange">Competition Orange</option>
+                                        <option value="Frozen White">Frozen White</option>
+                                        <option value="Ingot Silver">Ingot Silver</option>
+                                        <option value="Lighting Blue">Lighting Blue</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <ul class="list-inline">
                                     <li>
-                                        <a href="#" class="nav-link link-dark">
-                                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
-                                        Stripes
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="nav-link link-dark">
-                                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
-                                        Front, Rear, and Side
-                                        </a>
+                                        <button type="button" class="btn btn-primary next-step">Configure and continue</button>
                                     </li>
                                 </ul>
+                                </div>
+
                             </div>
 
-                            <ul class="list-inline pull-right">
-                                <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
-                            </ul>
+                            <div class="col-md-9">
+                                <img src="https://www.ford.com/campaignlibs/content/dam/ford_com/gtreveal/config2/resize1440xs922-std/whl-gra/cal-gry/opt-std/clr-frowht/str-non/1.jpg" class="img-fluid" alt="Responsive image">
+                            </div>
 
                         </div>
                         <div class="tab-pane" role="tabpanel" id="step2">
                             <h3>Wheels</h3>
-                            <p>This is step 2</p>
-                            <ul class="list-inline pull-right">
-                                <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                                <li><button type="button" class="btn btn-primary next-step">Save and continue</button></li>
-                            </ul>
+                            <hr>
+
+                            <div class="col-md-3">
+
+                                <div class="form-group mb-3">
+                                    <label class="mr-sm-2" for="inlineFormCustomSelect">20" One-Piece Forged-Aluminium</label><br>
+                                    <select class="custom-select mr-sm-2 form-control" id="inlineFormCustomSelect">
+                                        <option selected>20" One-Piece Forged-Aluminium</option>
+                                        <option value="Frozen white">Graphite with Black Lug Nuts</option>
+                                        <option value="Ingot Silver">Gloss Black with Black Lug Nuts</option>
+                                        <option value="Liquid Blue">Silver with Chrome Lug Nuts</option>
+                                        <option value="Liquid Grey">Graphite with Titanium Lug Nuts</option>
+                                    </select>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <label class="mr-sm-2" for="inlineFormCustomSelect">20" Carbon-Fiber</label><br>
+                                    <select class="form-control" id="inlineFormCustomSelectPref">
+                                        <option selected>20" Carbon-Fiber</option>
+                                        <option value="No Stripe">Matte Finish with Black Lug Nuts</option>
+                                        <option value="Alloy">Gloss Finish with Black Lug Nuts</option>
+                                        <option value="Competition Orange">Matte Finish with Titanium Lug Nuts</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <ul class="list-inline">
+                                        <li>
+                                            <button type="button" class="btn btn-default prev-step">Previous</button>
+                                            </li>
+                                        <li>
+                                            <button type="button" class="btn btn-primary next-step">Save and continue</button>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-9">
+                                <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%221035%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201035%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_184b89fe3a1%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A52pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_184b89fe3a1%22%3E%3Crect%20width%3D%221035%22%20height%3D%22250%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22365.18333435058594%22%20y%3D%22148.4%22%3E1035x250%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" class="img-fluid" alt="Responsive image">
+                            </div>
+
                         </div>
                         <div class="tab-pane" role="tabpanel" id="step3">
                             <h3>Interiors</h3>
-                            <p>This is step 3</p>
-                            <ul class="list-inline pull-right">
-                                <li><button type="button" class="btn btn-default prev-step">Previous</button></li>
-                                <li><button type="button" class="btn btn-primary btn-info-full next-step">Save and continue</button></li>
-                            </ul>
+                            <hr>
+
+                            <div class="col-md-3">
+
+                                <div class="form-group mb-3">
+                                    <label class="mr-sm-2" for="inlineFormCustomSelect">Custom Interior</label><br>
+                                    <select class="custom-select mr-sm-2 form-control" id="inlineFormCustomSelect">
+                                        <option selected>Custom Interiors</option>
+                                        <option value="Frozen white">Dark Energy</option>
+                                        <option value="Ingot Silver">Launch Control</option>
+                                        <option value="Liquid Blue">Light Speed</option>
+                                        <option value="Liquid Grey">Re-Entry</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <ul class="list-inline">
+                                        <li>
+                                            <button type="button" class="btn btn-default prev-step">Previous</button>
+                                            </li>
+                                        <li>
+                                            <button type="button" class="btn btn-primary next-step">Save and continue</button>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-9">
+                                <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%221035%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201035%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_184b89fe3a1%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A52pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_184b89fe3a1%22%3E%3Crect%20width%3D%221035%22%20height%3D%22250%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22365.18333435058594%22%20y%3D%22148.4%22%3E1035x250%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" class="img-fluid" alt="Responsive image">
+                            </div>
                         </div>
                         <div class="tab-pane" role="tabpanel" id="complete">
                             <h3>Series</h3>
-                            <p>You have successfully completed all steps.</p>
+
+                                                        <div class="col-md-3">
+
+                                <div class="form-group mb-3">
+                                    <label class="mr-sm-2" for="inlineFormCustomSelect">GT Series</label><br>
+                                    <select class="custom-select mr-sm-2 form-control" id="inlineFormCustomSelect">
+                                        <option selected>GT Series</option>
+                                        <option value="Frozen white">Ford GT Competition Series</option>
+                                        <option value="Ingot Silver">Ford GT '67 Heritage Edition Race Red</option>
+                                        <option value="Liquid Blue">Ford GT '66 Heritage Edition Shadow Black</option>
+                                        <option value="Liquid Grey">Ford GT '66 Heritage Edition Matte Black</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <ul class="list-inline">
+                                        <li>
+                                            <button type="button" class="btn btn-default prev-step">Previous</button>
+                                            </li>
+                                        <li>
+                                            <button type="button" class="btn btn-success next-step">Configure</button>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-9">
+                                <img src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%221035%22%20height%3D%22250%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201035%20250%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_184b89fe3a1%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A52pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_184b89fe3a1%22%3E%3Crect%20width%3D%221035%22%20height%3D%22250%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22365.18333435058594%22%20y%3D%22148.4%22%3E1035x250%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E" class="img-fluid" alt="Responsive image">
+                            </div>
                         </div>
+
                         <div class="clearfix"></div>
+
                     </div>
-                </form>
+
             </div>
         </section>
     </div>
     </div>
+    </form>
 
 </div>
