@@ -153,6 +153,22 @@
                 }
             }
     </style>
+    <style>
+        .exterior {
+                    display: none;
+                }
+    </style>
+    <script>
+
+        $(document).ready(function(){
+            $('#myselection').on('change', function(){
+                var selector = $(this).val()
+                $("div.exterior").hide()
+                $("#100" + selector).show()
+            })
+        })
+
+    </script>
 </head>
 <body>
 
